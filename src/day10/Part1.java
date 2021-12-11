@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class Part1 {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        List<String> inputArray = FileReader.readLinesFromFile("./src/day10/input.txt");
+        List<String> inputArray = FileReader.readLinesFromFile("./src/day10/test.txt");
         String pattern = "(\\(]|\\(}|\\(>|\\[\\)|\\[}|\\[>|\\{\\)|\\{]|\\{>|<\\)|<}|<])";
         Pattern illegalPattern = Pattern.compile(pattern);
         Map<String, Integer> scoreMap = new HashMap<>();
